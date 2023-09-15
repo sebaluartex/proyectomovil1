@@ -1,0 +1,52 @@
+<ion-content [fullscreen]="true" >
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title id="title">
+        RegistrApp
+      </ion-title>
+      
+      <!-- Imagen RegistrApp Header-->
+      <!--<img id="fotoregistrapp"  src="../../assets/icon/RegistraApp Imagen.png"/>-->
+    </ion-toolbar>
+  </ion-header>
+
+
+  <!-- AVATAR-->
+  <div id="container">
+    <ion-avatar id="avatar" #avatar>
+      <img alt="Silhouette of a person's head" src="https://pbs.twimg.com/media/E9k1SVXWQAYUP03?format=jpg&name=large" />
+    </ion-avatar>
+<br><br>
+
+    <ion-card>
+      <!-- CREDENCIALES-->
+      <ion-card-content>
+
+        <ion-list>
+          <ion-item>
+            <!-- USUARIO-->
+            <ion-input label="Usuario" labelPlacement="floating" placeholder="Ingrese su Usuario"></ion-input>
+          </ion-item>
+
+          <!-- CONTRASEÑA-->
+          <ion-item>
+            <ion-input label="Contraseña" type="password" labelPlacement="floating" placeholder="Ingrese su Contraseña"></ion-input>
+          </ion-item>
+
+          
+        </ion-list>        
+      </ion-card-content>
+      
+
+    </ion-card>
+    <!-- Botones -->
+      <br>
+      <ion-button (click)="iniciarSesion()" id="botoninicial"  color="warning" expand="">Iniciar Sesión</ion-button> <br><br>
+      <ion-button (click)="recuperarContrasena()" id="botoninicial"  color="warning" expand="">Recuperar Contraseña</ion-button> 
+  </div>
+  
+  
+  <div>
+    <img id="imagenFooter" src="../../assets/icon/FOOTER LOGIN DUOC.png"/>
+  </div>
+</ion-content>
